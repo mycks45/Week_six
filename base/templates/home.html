@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Mycks45</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">{{ request.user }}</button>
+    </form>
+  </div>
+</nav>
+ 
+<div class="container pt-5">
+<p>
+  Python was conceived in the late 1980s[39] by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to ABC programming language, which was inspired by SETL,[40] capable of exception handling and interfacing with the Amoeba operating system.[10] Its implementation began in December 1989.[41] Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his "permanent vacation" from his responsibilities as Python's Benevolent Dictator For Life, a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker.[42] He now shares his leadership as a member of a five-person steering council.[43][44][45] In January 2019, active Python core developers elected Brett Cannon, Nick Coghlan, Barry Warsaw, Carol Willing and Van Rossum to a five-member "Steering Council" to lead the project.[46] Guido van Rossum has since then withdrawn his nomination for the 2020 Steering council.[47]
+
+Python 2.0 was released on 16 October 2000, with many major new features, including a cycle-detecting garbage collector and support for Unicode.[48]
+
+Python 3.0 was released on 3 December 2008. It was a major revision of the language that is not completely backward-compatible.[49] Many of its major features were backported to Python 2.6.x[50] and 2.7.x version series. Releases of Python 3 include the 2to3 utility, which automates (at least partially) the translation of Python 2 code to Python 3.[51]
+
+Python 2.7's end-of-life date was initially set at 2015 then postponed to 2020 out of concern that a large body of existing code could not easily be forward-ported to Python 3.[52][53] No more security patches or other improvements will be released for it.[54][55] With Python 2's end-of-life, only Python 3.6.x[56] and later are supported.
+
+Python 3.9.2 and 3.8.8 were expedited[57] as all versions of Python (including 2.7[58]) had security issues, leading to possible remote code execution[59] and web cache poisoning.[60]
+</p>
+</div>
+
+<div class="container pt-5">
+  <p>
+
+Django was created in the fall of 2003, when the web programmers at the Lawrence Journal-World newspaper, Adrian Holovaty and Simon Willison, began using Python to build applications. Jacob Kaplan-Moss was hired early in Django's development shortly before Simon Willison's internship ended.[19] It was released publicly under a BSD license in July 2005. The framework was named after guitarist Django Reinhardt.[20] Adrian Holovaty is a Romani jazz guitar player and a big fan of Django Reinhardt.
+
+In June 2008, it was announced that a newly formed Django Software Foundation (DSF) would maintain Django in the future.[21]
+
+Features
+Components
+
+Screenshot of the Django admin interface for modifying a user account.
+Despite having its own nomenclature, such as naming the callable objects generating the HTTP responses "views",[9] the core Django framework can be seen as an MVC architecture.[10] It consists of an object-relational mapper (ORM) that mediates between data models (defined as Python classes) and a relational database ("Model"), a system for processing HTTP requests with a web templating system ("View"), and a regular-expression-based URL dispatcher ("Controller").
+
+Also included in the core framework are:
+
+a lightweight and standalone web server for development and testing
+a form serialization and validation system that can translate between HTML forms and values suitable for storage in the database
+a template system that utilizes the concept of inheritance borrowed from object-oriented programming
+a caching framework that can use any of several cache methods
+support for middleware classes that can intervene at various stages of request processing and carry out custom functions
+an internal dispatcher system that allows components of an application to communicate events to each other via pre-defined signals
+an internationalization system, including translations of Django's own components into a variety of languages
+a serialization system that can produce and read XML and/or JSON representations of Django model instances
+a system for extending the capabilities of the template engine
+an interface to Python's built-in unit test framework
+Bundled applications
+The main Django distribution also bundles a number of applications in its "contrib" package, including:
+
+an extensible authentication system
+the dynamic administrative interface
+tools for generating RSS and Atom syndication feeds
+a "Sites" framework that allows one Django installation to run multiple websites, each with their own content and applications
+tools for generating Google Sitemaps
+built-in mitigation for cross-site request forgery, cross-site scripting, SQL injection, password cracking and other typical web attacks, most of them turned on by default[22][23]
+a framework for creating GIS applications
+  </p>
+</div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+</body>
+</html>
